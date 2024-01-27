@@ -76,6 +76,8 @@ def return_book(book_id):
 
 
 # Функция для удаления книг из доступа и из базы данных
+
+
 def remove_books(book_id, quantity):
     # Получаем доступное количество указанной книги
     cur.execute("SELECT available_quantity FROM Books WHERE book_id = %s", (book_id,))
@@ -96,3 +98,24 @@ def remove_books(book_id, quantity):
         print(f"{quantity} книг(и) удалено из доступа и из базы данных.")
     else:
         print("Недостаточно книг для удаления.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
