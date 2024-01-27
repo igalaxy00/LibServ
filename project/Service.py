@@ -12,6 +12,7 @@ conn = psycopg2.connect(
 )
 
 cur = conn.cursor()
+#def pass():
 
 
 # Добавление книги с указанием авторов
